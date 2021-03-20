@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+<title>WCKKITENGELA-CHURCH MANAGEMENT SYSTEM</title>
+<style>
+.tabs .tab .radioClass{
+    display:none;
+}
+.tabs .tab{
+   overflow: hidden;
+   width:20%;  
+}
+.tabs .content {
+    position: absolute;
+    z-index:0;
+    opacity:0;
+    padding:0;
+    top:110px;
+    left:33%;
+    right:22%;
+    color: black;
+    background:#DCE9F1;   
+}
+.tabs>.tab .radioClass:checked ~ .content {
+  z-index:1;
+  opacity:1;
+  transition: opacity 1s ease;
+}
+.tabs .tab label {
+    display: block;
+    font-family: 'Saira Stencil One', cursive;
+    padding:10px;
+    cursor: pointer;
+    color: WHITE;
+    background-image:linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);  
+    margin-bottom: 1px;
+    border-radius:0px 5px 5px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+html{
+  height:100%;
+}
+body{
+ background-image:linear-gradient(to right, #00c9ff, #92fe9d);
+ background-size:cover;
+  background-repeat:no-repeat;
+}
+p{
+  text-align:justify;
+}
+.header{
+  color: Black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top:20px;
+}
+
+.tabs{
+   margin-left:3%;
+  margin-right:3%;
+  padding:0;
+  background:#DCE9F1;
+  border-radius:5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+}
+.tabs .tab label:hover{
+  background:#314755;
+  transition:all 400ms ease;
+}
+
+
+.tabs>.tab .radioClass:checked + label {
+    background: #DCE9F1;
+    color: BLACK;
+    padding: var(--underline-height) 1;
+
+}
+
+
+</style>
+</head>
+
+<body>
+  <h2 class="header">Pure HTML CSS Built Tab </h2>
+  <ul class="tabs" style="height: 500px;">
+      
+      <li class="tab">
+          <input class="radioClass" type="radio" name="tabs" checked id="tab1" />
+          <label for="tab1">HTML</label>
+          <div class="content">
+            <h3>This is pure HTML CSS tabs designed for your next project</h3>
+            <p>HTML:used for structuring</p>
+            <p>Whenever you opt for web development, the first thing that you should get yourself prepared for is HTML development</p>
+
+            
+            
+          </div>
+      </li>
+      
+      <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab2" />
+        <label for="tab2">CSS</label>   
+        <div  class="content">
+            <h3>This is pure css tabs design using HTML and CSS only</h3>
+          <p>CSS:Used for page styling</p>
+          <p></p>
+            
+         </div>
+      </li>
+  
+       <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab3" />
+        <label for="tab3">JavaScript</label>   
+        <div  class="content">
+            <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+          <p>JS: Not used</p>
+            <p></p>
+        </div>
+      </li>
+       <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab4" />
+        <label for="tab4">Bootstrap</label>   
+        <div  class="content">
+            <h4>In this tutorial we have designed vertical tabs without BootStrap </h4>
+          <p>Bootstrap: Not used</p>
+          <p></p>
+            
+        </div>
+      </li>
+       <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab5" />
+        <label for="tab5">Material</label>   
+        <div  class="content">
+            <h4>In this tutorial we have built vertical tabs menu</h4>
+          <p>Material Design: Not used</p>
+          <p></p>
+            
+        </div>
+      </li>
+       <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab6" />
+        <label for="tab6">Jquery</label>   
+        <div  class="content">
+            <h4>Jquery could be used to develop vertical tabs menu</h4>
+          <p>Jquery: Not used</p>
+          <p></p>
+            
+        </div>
+      </li>
+       <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" id="tab7" />
+        <label for="tab7">PHP</label>   
+        <div  class="content">
+            <h4>In this tutorial we design tabs for website with pure CSS.</h4>
+          <p>PHP: not under frontEnd</p>
+            <p></p>
+        </div>
+      </li>
+      
+    </ul>
+</body>
+</html>
